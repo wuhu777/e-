@@ -7,7 +7,7 @@ import org.junit.Test;
 public class EduLoginControllerTest {
 
     @Test
-    public void helloReturnsChineseGreetingMessage() {
+    public void shouldReturnChineseGreetingMessage() {
         EduLoginController controller = new EduLoginController();
 
         R response = controller.hello();

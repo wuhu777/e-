@@ -12,7 +12,7 @@ public class EduLoginController {
     public R login(){
         return R.ok().data("token","admin");
     }
-    //hello
+    //hello greeting
     @GetMapping("/hello")
     public R hello(){
         return R.ok().message("你好");
