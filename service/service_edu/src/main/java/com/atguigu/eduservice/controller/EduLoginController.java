@@ -1,12 +1,18 @@
 package com.atguigu.eduservice.controller;
 
 import com.atguigu.commonutils.R;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/eduservice/user")
 @CrossOrigin//解决跨域
 public class EduLoginController {
+    @ApiOperation(value = "问候")
+    @GetMapping("/hello")
+    public R hello(){
+        return R.ok().message("你好");
+    }
     //login
     @PostMapping("/login")
     public R login(){
