@@ -3,8 +3,6 @@ package com.atguigu.eduservice.controller;
 import com.atguigu.commonutils.R;
 import org.junit.Test;
 
-import java.lang.reflect.Field;
-
 import static org.junit.Assert.assertEquals;
 
 public class EduLoginControllerTest {
@@ -15,8 +13,6 @@ public class EduLoginControllerTest {
 
         R response = controller.hello();
 
-        Field messageField = R.class.getDeclaredField("message");
-        messageField.setAccessible(true);
-        assertEquals("你好", messageField.get(response));
+        assertEquals("你好", response.getMessage());
     }
 }
