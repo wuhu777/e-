@@ -7,7 +7,7 @@ import org.junit.Test;
 public class EduLoginControllerTest {
 
     @Test
-    public void helloReturnsGreetingMessage() {
+    public void shouldReturnGreetingMessageWhenHelloCalled() {
         EduLoginController controller = new EduLoginController();
 
         R response = controller.hello();
