@@ -9,7 +9,7 @@ import static org.junit.Assert.assertTrue;
 public class EduLoginControllerTest {
 
     @Test
-    public void helloReturnsNiHaoMessage() {
+    public void testHelloReturnsNiHaoMessage() {
         EduLoginController controller = new EduLoginController();
 
         R response = controller.hello();
